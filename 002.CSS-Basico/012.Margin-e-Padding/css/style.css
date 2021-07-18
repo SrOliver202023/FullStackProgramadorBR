@@ -1,0 +1,31 @@
+p {
+  color: blue;
+}
+
+#Titulo {
+  color: lightblue;
+}
+
+.texto_verde {
+  color:green;
+}
+
+.base{
+  height: 10px;
+  color: white;
+  padding: 20px; 
+  margin: 100px;
+
+}
+
+#container{
+  background-color: blue;
+  color:white;
+  margin: 20px;
+
+  padding: 20px; 
+
+}
+.troll {
+  background-color: red;
+}

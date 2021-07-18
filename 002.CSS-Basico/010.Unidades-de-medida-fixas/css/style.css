@@ -10,34 +10,25 @@ p {
   color:green;
 }
 
-#cm{
-  background-color: blue;
-  width: 10cm;
-  height: 10cm;
+.container {
+  font-size: 25px;
+  width: 300px;
+  background: red;
 }
 
-#mm{
-  background-color: red;
-  width: 10mm;
-  height: 10mm;
+.inside {
+  font-size: 2em;
+
+  width: 1em;
+
 }
-#in{
-  background-color: green;
-  width: 10in;
-  height: 10in;
-}
-#px{
-  background-color: yellow;
-  width:  10px;
-  height:  10px;
-}
-#pt{
-  background-color: blue;
-  width:  10pt;
-  height:  10pt;
-}
-#pc{
-  background-color: red;
-  width: 10pc;
-  height: 10pc;
-}
+
+/* 
+vmax
+vmin
+em -> relativa a fonte do elemento
+rem
+
+
+
+*/

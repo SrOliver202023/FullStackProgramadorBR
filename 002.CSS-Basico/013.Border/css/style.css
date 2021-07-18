@@ -1,0 +1,54 @@
+p {
+  color: blue;
+}
+
+#Titulo {
+  color: lightblue;
+}
+
+.texto_verde {
+  color:green;
+}
+
+.base{
+  height: 10px;
+  color: white;
+  padding: 20px; 
+  margin: 100px;
+
+}
+
+#container{
+  background-color: blue;
+  color:white;
+  margin: 20px;
+
+  padding: 20px; 
+
+}
+.troll {
+  background-color: red;
+  
+}
+
+.border {
+  padding:2rem;
+  background-color: yellow;
+  height: 1rem;
+  width: 1rem;
+
+  border-width: 5px;
+  border-top-color: red;
+  /* border-style: solid; */
+  border-radius: 50%; 
+  /* border: 5px solid green;   */
+}
+.solid {
+  border-style:solid;
+}
+.dotted {
+  border-style:dotted;
+}
+
+
+/* Da para utilizar mais de uma classe CSS no mesmo elemento */

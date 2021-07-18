@@ -1,0 +1,89 @@
+@font-face {
+  font-family: MinhaFonte;
+  src: url(./public/MyPuma.ttf);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:rgb(211, 211, 211);
+  text-decoration: none;
+  list-style: none;
+  font-family: 'MinhaFonte', cursive;
+}
+body {
+  background-color: rgb(27, 28, 42);
+}
+p {
+  font-style: normal;
+  font-weight: 100;
+  /* font-variant: small-caps; */
+}
+
+header {
+  background-color: rgb(15, 15, 15);
+  display:flex;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+}
+nav > ul > li > a {
+  margin-right: 20px;
+  background-color: rgb(39, 39, 39);
+  font-weight: bold;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3vh;
+}
+#Section-1 {
+  padding: 4%;
+  max-width: 950px;
+  margin: 1vh auto;
+
+}
+#Section-1 p {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+#Section-2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.Card {
+  max-width: 190px;
+  padding: 15px;
+  background-color: rgb(26, 26, 26);
+
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+.Card h3{
+  background-color: rgb(26, 26, 26);
+  margin: 10px 0;
+  padding: 5px;
+}
+.Card p {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Card img {
+
+  text-align: center;
+  width: 100px;
+  height: 110px;
+}

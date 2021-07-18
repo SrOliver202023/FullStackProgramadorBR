@@ -1,0 +1,43 @@
+p {
+  color: blue;
+}
+
+#Titulo {
+  color: lightblue;
+}
+
+.texto_verde {
+  color:green;
+}
+
+#cm{
+  background-color: blue;
+  width: 10cm;
+  height: 10cm;
+}
+
+#mm{
+  background-color: red;
+  width: 10mm;
+  height: 10mm;
+}
+#in{
+  background-color: green;
+  width: 10in;
+  height: 10in;
+}
+#px{
+  background-color: yellow;
+  width:  10px;
+  height:  10px;
+}
+#pt{
+  background-color: blue;
+  width:  10pt;
+  height:  10pt;
+}
+#pc{
+  background-color: red;
+  width: 10pc;
+  height: 10pc;
+}

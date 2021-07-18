@@ -1,0 +1,61 @@
+/* O reset padrao para todos projetos */
+/* * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+} */
+
+
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.container {
+  background-color: red;
+
+  padding: 5px;
+  border: 5px solid blue;
+
+  margin: 10px;
+
+}
+.content {
+  background-color: tomato;
+
+  outline: 5px solid green;
+  padding: 5px;
+
+}
+
+.square {
+  box-sizing: border-box;
+
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+
+  border: 3px solid blue;
+  padding: 10px; 
+
+}
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+
+/* box-sizing: border-box;  é para forçar o ajuste dos
+componenentes dentro do container
+evitando a soma do tamanho com o padding ou o 
+border, ele força para dentro
+
+*/

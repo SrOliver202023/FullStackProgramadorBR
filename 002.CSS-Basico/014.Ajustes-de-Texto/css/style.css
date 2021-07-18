@@ -1,0 +1,15 @@
+p {
+  color:red;
+  /* text-align: center; */
+  /* text-align: justify; */
+  text-indent: 15px;
+  /* text-transform:uppercase; */
+
+  text-decoration:none;
+  /* text-decoration: +outros; */
+  /* letter-spacing: 15px; */
+  /* line-height: 3vh; */
+  /* word-spacing: 23px; */
+  text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
