@@ -1,7 +1,7 @@
 @font-face {
   font-family: MinhaFonte;
   src: url(./public/MyPuma.ttf);
-
+  /* Escolher fontes leves, para nao pesar seu site, e demorar mais tempo para carregar */
 }
 * {
   margin: 0;
