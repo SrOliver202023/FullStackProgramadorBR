@@ -35,4 +35,15 @@ ul > a {
 }
 li {
     margin-left: 10px;
+} 
+
+.instagram {
+    list-style-image: url("../images/Insta.png");
+}
+.twitter {
+    list-style-image: url("../images/Twitter.png");
+}
+
+.youtube {
+    list-style-image: url("../images/Youtube.png");
 }
