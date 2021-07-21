@@ -1,0 +1,38 @@
+/* 
+    - Size 400px X 200px
+    - Use concept list-style
+*/
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+#iBanner {
+    /* background: #000 center/cover url("../images/backgorund.png") no-repeat; */
+    background-image: url(../images/backgorund.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+    margin: 20vh auto;
+    width: 400px;
+    height: 200px;
+    /* border: lightseagreen solid 5px; */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul > a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+li {
+    margin-left: 10px;
+}
