@@ -1,0 +1,36 @@
+#section-1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 4000px;
+
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+}
+
+.quadrado-blue {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    background-color: blue;
+}
+.quadrado-red {
+
+    background-color: red;
+}
+.quadrado-green {
+
+    background-color: green;
+}
+
+/* 
+
+O Fixed é referente a Viewport, e não ao body ou o pai, mas sim a viewport 
+normal é usado para o icone de suporte
+que permenece em toda rolagem da página.
+
+
+*/

@@ -1,0 +1,33 @@
+#section-1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+}
+
+.quadrado-blue {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    background-color: blue;
+}
+.quadrado-red {
+
+    background-color: red;
+}
+.quadrado-green {
+
+    background-color: green;
+}
+
+/* 
+O pai precisa ter position: relative ; 
+E o filho precisa ter position: absolute;
+
+*/
