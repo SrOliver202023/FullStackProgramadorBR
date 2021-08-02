@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+img{
+    float: left;
+}
+#i2 {
+    float: right;
+}
+div{
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid black;
+    clear: both;
+
+}
+nav {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: teal;
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav ul li:hover{
+    background-color: tomato;
+}
