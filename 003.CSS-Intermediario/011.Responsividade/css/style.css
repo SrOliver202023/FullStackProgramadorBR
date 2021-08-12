@@ -1,0 +1,27 @@
+body {
+    font-size: 1.2rem;
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+}
+.card {
+    width:  400px;
+    height: 200px;
+    border:2px solid green;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.c1{
+    background-color: red;
+    line-height: 200px;
+}
+.c2{
+    background-color: blue;
+    /* position: absolute; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
