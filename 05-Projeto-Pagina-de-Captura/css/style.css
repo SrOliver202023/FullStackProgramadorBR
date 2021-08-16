@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-y: auto;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+header{
+    background-color: #48c5cE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.title{
+    font-size: 26px;
+}
+section{
+        /* color:white */
+    padding: 20px;
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+
+}
+.formContainer{
+    background-color: #ffffffbb ;
+    max-width: 230px;
+    padding: 20px;
+    float: right;
+}
+h2{
+    font-size: 16px;
+}
+.mb{
+    margin-bottom: 15px;
+}
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+input[type="submit"]{
+    color:white;
+    background-color: #48c5ce;
+
+    font-weight: bold;
+}
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    /* background-position-x: calc(100% - 10px);
+    background-position-y: center; */
+}
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.picture{
+    width: 160px;
+
+}
+.description{
+
+    box-sizing: border-box;
+    max-width: 300px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 40px;
+    color: white;
+
+}
+
+.description h3, .description p {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .picture{
+        width: 180px;
+        text-align: center;
+
+    }
+    .formContainer{
+        float: none;
+        margin: auto;
+
+    }
+    .description h3 {
+        margin-top: 15px;
+        text-align: center;
+
+    }
+    .description{
+        display: block;
+        margin:auto;
+    
+        max-width: 220px;
+     
+        /* display: initial; */
+        /* overflow-wrap: break-word; */
+        /* overflow-wrap: anywhere; */
+    }
+
+}
