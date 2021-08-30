@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+header{
+
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+}
+.header-part-1, .header-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-part-1 {
+    /* display: inline-block; */
+    padding: 30px;
+
+    overflow: hidden;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+
+.header-part-1 > ul > li{
+    padding: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.header-part-1 > ul > li:hover{
+    background-color: teal;
+}
+.header-part-2{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header-part-2  {
+    padding: 10px;
+}
+.subject-list{
+    margin-top: 2px;
+    border-top: solid 2px white ;
+    border-bottom: solid 2px white ;
+
+}
+.subject{
+    width: auto;
+    z-index: 1;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 2px;
+    display: inline-block;
+    cursor:pointer;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.subject > ul{
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 10px;
+    width: auto;
+    position: absolute;
+    display: none;
+    background-color: rgb(105, 105, 105);
+    transition-delay: 10000ms;
+    text-align: center;
+    
+
+}
+.subject > ul > li{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(105, 105, 105);
+    padding: 5px 0px;
+    border-bottom: solid 1px white;
+
+}
+.subject:hover{
+    background-color: teal;
+
+
+}
+.subject:hover ul, .subject:active ul{
+    transition-delay: 10000ms;
+    display: block;
+}
+.subject ul:hover {
+    display: block;
+    transition-delay: 1000ms;
+
+}
+
+
+/* section-1  */
+.section-1{
+    background-image: url('./homestudy.jpg');
+    background-repeat: no-repeat;
+    background-size:1100px 700px;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(31, 31, 31);
+
+    height: 70vh;
+    max-width: 60%;
+    margin: 1vh auto;
+    position: relative;
+}
+.section-1 h3{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    padding: 14px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.section-2 {
+    margin: auto;
+}
+.section-2 p {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 400px;
+    background-color: teal;
+}
+
+footer{
+    background-color: rgb(112, 112, 112);
+    height: 20vh;
+}
