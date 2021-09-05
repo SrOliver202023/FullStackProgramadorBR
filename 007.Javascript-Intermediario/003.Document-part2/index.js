@@ -1,0 +1,1 @@
+for(let i = 0; i < 10; i++) document.body.innerHTML += `<h1>item ${i}</h1>`

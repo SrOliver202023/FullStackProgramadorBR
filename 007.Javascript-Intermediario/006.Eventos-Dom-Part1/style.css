@@ -1,0 +1,93 @@
+:root{
+    --Color-Primary:rgb(0, 183, 255);
+}
+*{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border:none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:var(--Color-Primary);
+    margin: 20vh auto;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.container .titleContainer {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: white;
+}
+.toChange{
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Color-Primary);
+}
+.btnSend{
+    font-size: 20px;
+    font-weight: 800; 
+    margin: 1rem auto;
+    padding: 10px;
+    display: block;
+    background-color: white;
+    color: var(--Color-Primary);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+    display: none;
+}
+.message{
+    margin-top: 10vh;
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;   
+    text-align: center;
+}
+.message .quit {
+    background-color:var(--Color-Primary);
+    padding: 4px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    top: 12px;
+    right: 12px;
+    position: absolute;
+    cursor: pointer;
+}
+.message h2{
+    color: var(--Color-Primary);
+    margin-top: 2rem;
+}
+.message img {
+    margin: auto;
+    width: 280px;
+}
+.message p{
+    color: var(--Color-Primary) ;
+    font-size: 20px;
+    max-width: 90%;
+    font-weight: 500;
+    margin: 0 auto 2rem;
+}
