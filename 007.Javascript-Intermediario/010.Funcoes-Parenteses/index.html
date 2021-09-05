@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Brackets</title>
+</head>
+    <style>
+
+        h1{
+            background-color: aqua;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        h2{
+            background-color: rgb(0, 255, 0);
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+
+<body>
+    <h1 onClick="ret1()">ClickMe</h1>
+    <h2 onClick="ret2()">ClickMe</h2>
+    <div class="result"></div>
+</body>
+<script>
+    function ret1(){
+        document.querySelector(".result").innerText += 1;
+        console.log(1);
+        return 1.1;
+    }
+    function ret2(){
+        document.querySelector(".result").innerText += 2;
+        console.log(2);
+        return 2.1;
+    }
+
+</script>
+</html>

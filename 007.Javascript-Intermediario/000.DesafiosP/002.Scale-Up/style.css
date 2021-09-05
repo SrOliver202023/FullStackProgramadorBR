@@ -1,0 +1,25 @@
+.father{
+    max-width: 190px;
+    padding: 20px;
+    background-color: rgb(204, 0, 255);
+    margin:10vh auto;
+}
+.father, .square{
+    border-radius: 10px;
+}
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
+.square:hover {
+    transform: scale(1.5);
+    background-color: rgb(217, 255, 0);
+    border:solid 3px rgb(20, 220, 193);
+
+}
