@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Parents and Children</title>
+</head>
+<body>
+    
+    <div class="parents-1">
+        OLÁ1
+        <div class="children-1">1-Olá 1</div>
+        <div class="children-1">1-Olá 2</div>
+        <div class="children-1">1-Olá 3</div>
+        <div class="children-1">1-Olá 4 </div>
+    </div>
+    <div class="parents-2">
+        OLÁ2
+        <div class="children-1">2-Olá 1</div>
+        <div class="children-1">2-Olá 2</div>
+        <div class="children-1">2-Olá 3</div>
+        <div class="children-1">2-Olá 4 </div>
+    </div>
+
+</body>
+<script>
+    window.addEventListener("click", (e)=> console.log(e.target.parentElement, e.target.children[1]));
+</script>
+</html>

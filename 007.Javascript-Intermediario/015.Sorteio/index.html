@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Sort</title>
+</head>
+<body>
+    <h1 class="h1-Display"></h1>
+    <button class="btn-Sort">Sortear</button>
+
+</body>
+    <script>
+        const btnClick = document.querySelector(".btn-Sort"); 
+        const hDisplay = document.querySelector(".h1-Display");
+
+        let people = ["Kethlyn", "Eliseu", "Carlos", "Lívia"]
+
+        btnClick.addEventListener("click", ()=> toSort());
+        
+        function toSort(){
+            let numberPeople = people.length;
+            personSorted = Math.floor(Math.random() * numberPeople);
+            hDisplay.innerHTML = people[personSorted];
+        }
+    </script>
+
+
+</html>
