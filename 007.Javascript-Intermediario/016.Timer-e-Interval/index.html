@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer e Interval</title>
+</head>
+<body>
+    <h1>--<span class="display"> </span>--</h1>
+    <button class="btnStart">Iniciar</button>
+    <button class="btnStop">Pausar</button>
+
+</body>
+<script>
+
+    // ----LOOP----
+    // setInterval 
+    // clearInterval
+    // -----1X-----
+    // setTimeout 
+    // clearTimeout
+    
+    const iDisplay = document.querySelector(".display");
+    const btnStart = document.querySelector(".btnStart");
+    const btnStop = document.querySelector(".btnStop");
+
+    let num = 0;
+    let inTimer = 0;
+    
+    btnStart.addEventListener("click", ()=>{
+        startTimer();
+    });
+    btnStop.addEventListener("click", ()=>{
+        stopTimer();
+    })
+
+    function startTimer(){
+        inTimer = setInterval(countTimer, 100);
+    }
+    function countTimer(){
+        num++
+        console.log(num);
+        iDisplay.innerHTML = num;
+
+    }
+    function stopTimer(){
+        clearInterval(inTimer);
+    }
+
+
+</script>
+
+</html>
