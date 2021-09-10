@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 100%;
+    max-width: 800px;
+}
+.controle{
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    top:0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+
+}
+.controle:hover .bar{
+    display: block;
+}
+.bar{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.801);
+    position: relative;
+    top: 100%;
+    transform:translateY(-100%);
+}
+.controle .bar .btn {
+    cursor: pointer;
+    margin: 10px;
+    width: 30px;
+}
+.controle .bar .btn:hover{
+    transform: scale(1.1);
+}
