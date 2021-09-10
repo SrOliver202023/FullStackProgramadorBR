@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgb(6,0,98);
+    background: -moz-linear-gradient(90deg, rgba(6,0,98,1) 0%, rgba(8,57,102,1) 20%, rgba(0,77,148,1) 67%, rgba(8,79,93,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(6,0,98,1) 0%, rgba(8,57,102,1) 20%, rgba(0,77,148,1) 67%, rgba(8,79,93,1) 100%);
+    background: linear-gradient(90deg, rgba(6,0,98,1) 0%, rgba(8,57,102,1) 20%, rgba(0,77,148,1) 67%, rgba(8,79,93,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    box-sizing: border-box;
+    margin: 3vh auto;
+    border-radius: 10px;
+    max-width: 340px;   
+    justify-content: center;
+}
+.container .section-left,
+ .container .section-right{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #181818;
+    border: solid black 1px;
+    padding: 1.4rem;
+    max-width: 360px;
+    width: 100%;
+    max-height: 900px;
+}
+.container .section-right{
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+}
+.container .section-left .container-disk{
+    border-radius: 10px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .section-left .container-disk .disk {
+    border-radius: 100%;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    box-shadow: black 0 0 10px 2px;
+}
+.container .section-left .container-disk .disk img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    animation-name: rotate;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.container .section-left h3 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 360;
+    color: white;
+}
+.container .line, .container .times {
+    padding: 0 10px;
+}
+.container .section-left .line .line-to-progress{
+    margin: 1rem 0 ;
+    height: 5px;
+    width: 100%;
+    background-color: #8D8D8D;
+    border-radius: 4rem;
+}
+.container .section-left .line .line-in-progress{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    width: 13%;
+}
+.container .section-left .line .line-in-progress .circle-progress{
+    position: absolute;
+    margin-left: 40px;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+.container .section-left .buttons {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .section-left .times{
+    display: flex;
+    justify-content: space-between;
+}
+.container .section-left .times .time {
+    font-size: 20px;
+    color: white;
+}
+.container .section-left .buttons .btn-primary{
+    margin: 0 30px;
+    width: 80px;
+    cursor: pointer;
+}
+.container .section-left .buttons .btn-secondary{
+    width: 30px;
+    cursor: pointer;
+}
+.container .section-left .buttons .btn-primary:hover,
+.container .section-left .buttons .btn-secondary:hover{
+    transform: scale(1.1);
+}
+.container .section-left .btn-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.container .section-left .btn-list img{
+    cursor: pointer;
+    margin: 0 10px;
+    width: 60px;
+}
+.container .section-left .btn-list img:hover{
+    transform: scale(1.1);
+}
+.container .section-right .top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .section-right .top-bar img{
+    width: 30px;
+    cursor: pointer;
+}
+.container .section-right .top-bar h3, span {
+    color: white;
+    font-weight: 400;
+    text-align: right;
+}
+.container .section-right h2{
+    font-size: 30px;
+    color: white;
+    margin: 1.4rem;
+}
+.container .section-right .list-items-songs {
+    max-height: 442px;
+    overflow-y:  scroll ;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(73, 73, 73);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.container .section-right .list-items-songs .item-song{
+    color: white;
+    margin: 5px 0;
+    padding: 20px;
+    border-bottom: black solid 2px;
+}
+@media screen and (max-width:600px) {
+    .container .section-left .container-disk{
+        margin: auto;
+        width: 220px;
+        height: 220px;
+    }
+    .container .section-left .container-disk .disk {
+        border-radius: 100%;
+        width: 90%;
+        height: 90%;
+        background-color: black;
+    }
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
