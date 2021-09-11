@@ -6,44 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Audio Player</title>
-</head>
-<body>
-  <header>
-    <nav>
-
-    </nav>
-  </header>
-
-
-
-    <div class="container">
-        <div class="section-left">
-              <div class="container-disk">
-                  <div class="disk">
-                    <img src="./Assets/boy.jpg" alt="">
+    
+  </head>
+  <body>
+  <div class="container">
+    <div class="section-left">
+      <div class="container-disk">
+        <div class="disk">
+          <audio >
+            <source src="./Music/SLORAX & Leannan - Freed From Desire .mp3" type="audio/mp3">
+          </audio>
+          <img src="./Assets/boy.jpg" alt="">
                   </div>
               </div>
               <h3>Song Now - Toque 2012 loremp seila</h3>
               <div class="line">
                 <div class="line-to-progress">
-                    <div class="line-in-progress">
-                      <div class="circle-progress"></div>
-                    </div> 
+                  <input type="range" min="0" value="0" class="slider">
                 </div>
               </div>
               <div class="times">
-                <p class="current-time">--:--</p>
-                <p class="duration-time">--:--</p>
+                <p class="current-time">
+                  00:00  
+                </p>
+                <p class="duration-time">
+                  00:00
+                </p>
               </div>
               <div class="buttons">
-                <img class="btn-secondary" src="./Assets/Back.png" alt="">
+                <img id="toBack" class="btn-secondary" src="./Assets/Back.png" alt="">
                 <img class="btn-primary" src="./Assets/Play.png" alt="">
-                <img class="btn-secondary" src="./Assets/Forward.png" alt="">
+                <img id="toForward" class="btn-secondary" src="./Assets/Forward.png" alt="">
               </div>
               <div class="btn-list">
                   <img src="./Assets/Songs-List.png" alt="">
               </div>
-
         </div>
         <div class="section-right">
           <div class="top-bar">
@@ -53,63 +50,11 @@
             <h2>PlayList</h2>
                 <div class="list-items-songs">
                       <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>       
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div> 
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>      
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>      
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>      
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>      
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>   
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>   
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>   
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>   
-                      <div class="item-song">
-                        <p>Song of ordem now</p>
-                      </div>   
+                        <p>Empty</p>
+                      </div>        
                 </div>
         </div>
     </div>
-
 </body>
 <script src="script.js"></script>
 </html>
