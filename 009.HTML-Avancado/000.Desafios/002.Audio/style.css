@@ -75,17 +75,28 @@ body{
 }
 .container .section-left .line .line-to-progress{
     margin: 1rem 0 ;
-    height: 5px;
+    height: 15px;
     width: 100%;
-    background-color: #8D8D8D;
     border-radius: 4rem;
 }
-.container .section-left .line .line-in-progress{
-    position: relative;
-    height: 5px;
+.container .section-left .line .line-to-progress .slider{
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: #7c7c7c;
     width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ .slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
     background-color: white;
-    width: 13%;
+    border-radius: 100%;
+    cursor: pointer;
 }
 .container .section-left .line .line-in-progress .circle-progress{
     position: absolute;
@@ -105,11 +116,13 @@ body{
 .container .section-left .times{
     display: flex;
     justify-content: space-between;
-}
-.container .section-left .times .time {
     font-size: 20px;
     color: white;
 }
+.container .section-left .times p {
+    font-weight: 300;
+}
+
 .container .section-left .buttons .btn-primary{
     margin: 0 30px;
     width: 80px;
@@ -156,6 +169,7 @@ body{
     margin: 1.4rem;
 }
 .container .section-right .list-items-songs {
+    height: 70vh;
     max-height: 442px;
     overflow-y:  scroll ;
     box-sizing: border-box;
@@ -191,7 +205,6 @@ body{
         background-color: black;
     }
 }
-
 @keyframes rotate{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }
