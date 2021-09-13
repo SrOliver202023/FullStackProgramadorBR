@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: grey;
+    /* height: 400px; */
+    color: white;
+}
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: black;
+}
+.r3{
+    background-color: chartreuse;
+}
+.sq{
+    height: 220px;
+    width: 220px;
+}
