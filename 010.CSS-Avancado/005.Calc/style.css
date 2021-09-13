@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: thistle;
+}
+
+.square{
+    height: 4vh;
+    width: calc(100% - 100px);
+    background-color: teal;
+    margin: 1vh auto;
+}
