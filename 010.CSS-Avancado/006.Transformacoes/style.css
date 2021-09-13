@@ -1,0 +1,18 @@
+div{
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 200px;
+    height: 200px;
+}
+.d-1{
+    background-color:burlywood;
+    transform: rotate(30deg);
+}
+.d-2{
+    background-color: teal;
+    transform: skew(30deg);
+}
+.d-3{
+    background-color: tomato;
+    transform: scale(0.3);
+}
