@@ -1,0 +1,32 @@
+.container{
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: grey;
+    height: 90vh;
+
+    /* grid-template-rows: 200px 100px;
+    grid-template-columns: 1fr 2fr 1fr; */
+
+    grid-template: auto auto / auto auto auto;
+    gap:1px;
+
+    align-items:center;
+    justify-items: center;
+}
+
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+
+}
