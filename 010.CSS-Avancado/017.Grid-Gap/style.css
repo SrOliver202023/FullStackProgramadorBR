@@ -1,0 +1,40 @@
+.container{
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: grey;
+
+    /* grid-template-rows: 200px 100px;
+    grid-template-columns: 1fr 2fr 1fr; */
+
+    grid-template: 100px 100px / 1fr 2fr 1fr;
+
+    /* 
+            Antigo
+        grid-row-gap:10px;
+        grid-column-gap: 30px; 
+        grid-gap: 10px 30px;
+    */
+    /*
+            Novo
+        column-gap:23px;
+        row-gap:23px;
+        gap: 21px
+    */
+
+    gap:15px;
+
+}
+
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+/* .rect{
+} */
