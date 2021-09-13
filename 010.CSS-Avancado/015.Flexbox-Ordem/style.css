@@ -1,0 +1,39 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+    background-color: lawngreen;
+}
+.r1{
+    background-color: rosybrown;
+    align-self: flex-start;
+}
+.r2{
+    background-color: blue;
+    align-self: center;
+
+}
+.r3{
+    background-color: yellow;
+    align-self: flex-end;
+}
+.sq{
+
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+
+    /* 
+        flex-shrink: 1;
+        O tamanho Não se adpta
+    */
+    /* 
+        flex-grow: 1;
+        O tamanho Se adpta
+     */
+
+    margin: 5px 5px;
+    height: 12rem;
+    width: 12rem;
+}

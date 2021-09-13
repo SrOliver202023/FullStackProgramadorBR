@@ -1,0 +1,28 @@
+h1::first-letter{
+    color: red;
+}
+
+p::first-line{
+    color: tomato;
+}
+
+li{
+    list-style: none;
+}
+li::before{
+    vertical-align:middle;
+    content: "";
+    display: inline-block;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/maca.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p::selection,
+h1::selection{
+    background-color: tomato;
+    color: white;
+}

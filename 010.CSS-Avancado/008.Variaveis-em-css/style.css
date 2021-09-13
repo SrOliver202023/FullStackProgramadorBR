@@ -1,0 +1,15 @@
+:root{
+    --colorTitles: rgb(30, 226, 24);
+    --subColor: red;
+    --primaryColor: rgb(0, 225, 255);
+}
+h1{
+    background-color: var(--colorTitles);
+}
+.p1{
+    background-color: var(--subColor);
+}
+.p2{
+    font-weight: 800;
+    color: var(--subColor);
+}

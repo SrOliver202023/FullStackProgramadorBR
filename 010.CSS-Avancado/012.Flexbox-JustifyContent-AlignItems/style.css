@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.r1{
+    background-color: rosybrown;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: yellow;
+}
+.sq{
+    height: 200px;
+    width: 200px;
+}
