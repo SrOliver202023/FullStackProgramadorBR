@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    height: 400px;
+    background-color: grey;
+    flex-direction: column;
+    color: white;
+}
+/* .sq{
+    height: 150px;
+    width: 150px;
+} */
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: black;
+}
+.r3{
+    background-color: chartreuse;
+}
