@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    height: 400px;
+    background-color: grey;
+
+    flex-flow: column-reverse wrap;
+
+    color: white;
+}
+
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: black;
+}
+.r3{
+    background-color: chartreuse;
+}
+.sq{
+    height: 150px;
+    width: 150px;
+}
