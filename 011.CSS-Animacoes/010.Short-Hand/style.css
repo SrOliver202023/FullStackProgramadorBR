@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+}
+@keyframes moveTo{
+    0%{left:0px}
+    50%{left: 71%}
+    100%{left:0px}
+}
+.box {
+    position: relative;
+
+    border-radius: 8px;
+    background-color: rgba(255, 99, 71, 0);
+    height:50px;
+    width:100px;
+    background-color: blue;
+    margin: 1rem;
+    /* animation-name: moveTo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    animation: moveTo 1s linear none infinite alternate;
+
+}
+/* .div1{
+    animation-timing-function: linear;
+} */
+.div2{
+    animation-timing-function: ease;
+}
+/* .div3{
+    animation-timing-function: ease-in;
+} */
+.div4{
+    animation-timing-function: ease-out;
+}
+/* .div5{
+    animation-timing-function: ease-in-out;
+} */
