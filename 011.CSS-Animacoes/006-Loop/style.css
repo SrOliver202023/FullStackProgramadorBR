@@ -1,0 +1,22 @@
+.box {
+    height:200px;
+    width:200px;
+    border-style: solid;
+    animation-name: animT;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes animT{
+    0%{
+        background-color: purple; width: 200px;
+    }
+    25%{
+        background-color: rebeccapurple; width: 500px;
+    }
+    50%{
+        background-color: red;width: 550px;
+    }
+    75%{
+        background-color: royalblue; width: 200px;
+    }
+}

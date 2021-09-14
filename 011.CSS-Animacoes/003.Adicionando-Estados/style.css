@@ -1,0 +1,21 @@
+.box {
+    height:200px;
+    width:200px;
+    border-style: solid;
+    animation-name: animT;
+    animation-duration: 4s;
+}
+@keyframes animT{
+    0%{
+        background-color: purple; 
+    }
+    25%{
+        background-color: rebeccapurple;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: royalblue; 
+    }
+}

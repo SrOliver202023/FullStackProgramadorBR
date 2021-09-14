@@ -1,0 +1,12 @@
+.box{
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    animation-name: changeColor;
+    animation-duration: 3s;
+}
+
+@keyframes changeColor{
+    from {background-color: blue;}
+    to {background-color: purple}
+}
