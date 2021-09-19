@@ -36,3 +36,13 @@ const funcionarios =[
     job: "Deposito"
 }
 ];
+
+function searchAdm(funcionario){
+    if(funcionario.job == "Adm"){
+        return funcionario;
+    }
+}
+
+let adms = funcionarios.filter(searchAdm);
+let pagamentoAdm = adms.reduce((tot, aluno)=> tot + aluno.money, 0);
+console.log(pagamentoAdm);

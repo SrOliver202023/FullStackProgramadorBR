@@ -9,10 +9,15 @@ let alunos = [
     novoAluno("Julia", 15),
     novoAluno("Matheus", 43)
 ]
-function alunoDaqui5Anos(){
-    alunos.idade += 5;
-    return aluno;
+function alunoDaqui5Anos(aluno){
+    if(aluno.idade >= 15  && aluno.idade <= 20){
+        return aluno;
+    }
 }
 
-console.log(alunos.map(alunoDaqui5Anos));
+
+console.log(alunos.filter(alunoDaqui5Anos));
+
+
+
 
