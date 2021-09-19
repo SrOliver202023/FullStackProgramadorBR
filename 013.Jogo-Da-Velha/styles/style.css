@@ -1,0 +1,97 @@
+*{
+    font-family:  Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: teal;
+    overflow: hidden;
+}
+.stage{
+    position: relative;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "x";
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "o";
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.modal {
+    display: none;
+}
+.modal.active{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.267);
+    height: 98.5%;
+    width: 310px;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-timing-function: step-start;
+    animation: showModal 2s -0.2s;
+    transform: translate(-50%, -50.5%);
+
+}
+@keyframes showModal{
+    10%{
+        opacity: 0;
+        /* top:150%; */
+    }
+}
+
+
+.modal.active h3{
+    font-size: 2rem;
+    color: orange;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    border-radius: 8px;
+    color:white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(209, 137, 4);
+}
