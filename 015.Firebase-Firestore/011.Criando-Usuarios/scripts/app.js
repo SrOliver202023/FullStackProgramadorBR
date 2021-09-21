@@ -20,24 +20,15 @@ measurementId: "G-BP6JP9JJFC"
 
 firebase.initializeApp(config);
 
-const TURMA = "turmaA";
-
 let db = firebase.firestore();
 
-// let docRef = db.collection(TURMA).onSnapshot(snapshot=>{
-//     snapshot.forEach((doc)=>{
-//         let aluno = doc.data();
-//         console.log(aluno);
-//     })
-// })
-let docRef = db.collection(TURMA)
-// .where('notes.note1', '>', 1)
+const auth = firebase.auth();
+const newUserEmail = "teste1@teste.com";
+const newUserPassword = "123fAabc";
 
-docRef.onSnapshot(snapshot=>{
-    let alunos = [];
-    snapshot.forEach(aluno=>alunos.push(aluno.data()));
-    let resp = alunos.filter(aluno => aluno.name == 'Livia')
-        .map(getAluno=> {return { name: getAluno.name, type:"person"} });
-
-    console.log(resp);
-})
+auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword)
+    .then(user=>{
+        console.log("Registrado!");
+    }).catch(error=>{
+        console.log(error);
+    })

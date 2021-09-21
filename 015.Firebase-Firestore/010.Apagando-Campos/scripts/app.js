@@ -19,25 +19,12 @@ measurementId: "G-BP6JP9JJFC"
 };
 
 firebase.initializeApp(config);
-
 const TURMA = "turmaA";
 
 let db = firebase.firestore();
 
-// let docRef = db.collection(TURMA).onSnapshot(snapshot=>{
-//     snapshot.forEach((doc)=>{
-//         let aluno = doc.data();
-//         console.log(aluno);
-//     })
-// })
-let docRef = db.collection(TURMA)
-// .where('notes.note1', '>', 1)
-
-docRef.onSnapshot(snapshot=>{
-    let alunos = [];
-    snapshot.forEach(aluno=>alunos.push(aluno.data()));
-    let resp = alunos.filter(aluno => aluno.name == 'Livia')
-        .map(getAluno=> {return { name: getAluno.name, type:"person"} });
-
-    console.log(resp);
+db.collection(TURMA).doc("NewStudent").delete().then(()=>{
+    console.log("Documento apgado com sucesso!");
+}).catch(err=>{
+    console.log(err);
 })
