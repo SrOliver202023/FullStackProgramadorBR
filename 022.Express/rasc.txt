@@ -1,0 +1,12 @@
+app.get('./', (req, res)=>{
+    res.send()
+})
+app.post('./', (req, res)=>{
+    res.send()
+})
+app.put('./', (req, res)=>{
+    res.send()
+})
+app.delete('./', (req, res)=>{
+    res.send()
+})
