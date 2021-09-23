@@ -1,0 +1,9 @@
+*{
+    font-family: "consolas";
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: rgb(18, 25, 41);
+}
