@@ -1,20 +1,29 @@
 const express = require('express');
+const { alunos } = require('./date');
 const PORT = 5000;
-
 const app = express();
 
-// app.use(express.static('./client'));
-app.use(express.urlencoded({ extended:false }));
-app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+// app.use(express.json())
 
-const getBody = (req, res)=>{
-    let resp = req.body;
-    console.log(JSON.stringify(req.body));
-}
-const showBody = (req, res)=>{
-    res.send(`<h1>${JSON.stringify(req.body)}</h1>`)
-}
+app.get('/', (req, res)=>{
+    res.send("Hello World!")
+    // console.log(JSON.stringify(alunos))
+})
 
-app.get('/', showBody)
+app.get('/alunos', (req, res)=>{
+    res.json(JSON.stringify(alunos));
+})
+app.get('/aluno', (req, res)=>{
+    // console.log(req.body);
+    // console.log(req.body);
+    res.send(alunos[req.body.id]);
+
+})
+app.get('/aluno/:id', (req, res)=>{
+    // console.log(req.body);
+    // console.log(req.body);
+    res.send(alunos[req.params.id]);
+})
 
 app.listen(PORT, ()=>{console.log(`Running Server PORT: ${PORT}`)});
