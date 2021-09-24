@@ -2,8 +2,42 @@
     font-family: "consolas";
     margin: 0;
     padding: 0;
-    color: white;
+    outline: none;
+    border: none;
 }
 body{
-    background-color: rgb(18, 25, 41);
+    background-color: rgb(30, 35, 43);
+}
+ 
+header{
+    background-color: rgb(50, 50, 156);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+h3, h1, h2{
+    margin: 5px;
+    color: white;
+}
+h3{
+    margin-top: 1rem;
+}
+input, button{
+    padding: 7px;
+    margin: 4px;
+}
+.card{
+    max-width: 800px;
+    margin: auto
+}
+.card-header{
+    background-color: rgb(92, 166, 250);
+    font-weight: bold;
+}
+.card-body{
+    background-color: rgb(218, 218, 218);
 }
