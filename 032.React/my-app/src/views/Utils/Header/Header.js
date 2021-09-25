@@ -1,16 +1,36 @@
 import React from 'react';
+import Menu from '../Menu/Menu';
 import './Utils.css';
+
+const links = ["Home","Contact", "About"]
 
 function Header(props){
   return(
     <header className="header">
       <h1>{ props.name }</h1>
-      <ul className="menu">
-        <li color={props.homeColor}>Home</li>
-        <li color={props.buyColor}>Buy</li>
-        <li color={props.contactColor}>Contact</li>
-      </ul>
+      <Menu namePage={props.namePage} links={ links }></Menu>    
     </header>
   );
 }
+// class Header extends React.Component{
+//   constructor(props){
+//     super(props);
+//   }
+//   render(){
+//     return(
+//       <header className="header">
+//         <h1>{ this.props.name }</h1>
+//         <Menu namePage={this.props.namePage} links={ links }></Menu>    
+//       </header>
+//     );
+//   }
+// }
+
+
+
+
+
+
+
+
 export default Header;
