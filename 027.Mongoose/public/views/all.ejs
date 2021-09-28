@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="all.css">
+  <title>Links</title>
+</head>
+<body>
+  
+
+  <div class="container">
+
+    <% for(let i = 0; i < links.length; i++) { %>
+      <div class="card">
+        <div class="item">
+          <h2> <%= links[i].title %> </h2>
+          <p> <%= links[i].description %> </p>
+          <a href="<%= links[i].url %>">Ir <span class="rocket">🚀</span> </a>
+        </div>
+      </div>
+    <% }%>
+
+  
+  </div>
+
+
+</body>
+</html>
