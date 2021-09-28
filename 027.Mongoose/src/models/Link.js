@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const linkSchema = new mongoose.Schema({
   title: { type: String, required: true},
-  description: {type:String, default:"Sua descrição..."},
+  description: { type: String, default: "Your description..."},
   url: { type: String, required: true},
   click: {type: Number, default:0 }
 })

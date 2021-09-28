@@ -1,0 +1,105 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body{
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+
+}
+.card{
+  padding: 5px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+}
+.card:hover ::after{
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(360deg, red, blue 70%);
+  border-radius: 6px;
+  left: -30%;
+  top: -30%;
+  box-shadow: 5px -5px 0px rgba(0, 0, 0, 0.308);
+  animation: borderLight 1200ms linear infinite;
+  z-index: -134;
+}
+.item{
+  color: white;
+  padding: 10px;
+  width: 8rem;
+  background-color: royalblue;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes borderLight {
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+.item h2 {
+  text-align: center;
+  overflow: visible;
+}
+.item p{
+  height: 40px;
+  margin: 5px 0;
+  background-color: rgb(90, 125, 231);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+.item p::-webkit-scrollbar{
+  width: 0px;
+}
+.item a {
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 2rem;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+.item a:hover{
+  background-color: rgb(185, 185, 185);
+}
+.item:hover .rocket{
+  box-sizing: border-box;
+  animation-name: fly;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes fly {
+  0%{
+    margin-bottom: -10px;
+  }
+  50%{
+    margin-bottom: 10px;
+
+  }
+  100%{
+    margin-bottom: -10px;
+
+  }
+
+}

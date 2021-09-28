@@ -6,7 +6,11 @@ const db = require('./db');
 db.on("error", ()=> console.log("Error Detected"));
 db.once("open", () => console.log("db It's OK!"));
 
-Routes.get('/:title', LinkController.title);
-Routes.get('/', (req, res)=> res.send('Hello Mongoose!'))
+Routes.use(express.urlencoded({ extended:true }))
+
+Routes.get('/all', LinkController.allLinks);
+Routes.get('/:title', LinkController.redirect);
+Routes.get('/', LinkController.indexRegister);
+Routes.post('/', LinkController.addLink);
 
 module.exports = Routes;
