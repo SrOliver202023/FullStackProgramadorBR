@@ -4,7 +4,12 @@ const redirect = async (req, res)=>{
   let title = req.params.title;
   try{
     let docs = await Link.findOne({ title })
-    res.redirect(docs.url);
+
+    if(doc){
+      res.redirect(docs.url);
+    }else{
+      next();
+    }
   }catch(error){ res.send(error) }
 }
 
@@ -12,7 +17,7 @@ const addLink = async(req, res)=>{
   let link = new Link(req.body);
   try{
     let doc = await link.save();
-    console.log(req.body)
+    res.redirect('/');
   }catch(error){
     res.status(422).render('index', { error, body:req.body })
   }
@@ -34,4 +39,19 @@ const allLinks = async(req, res)=>{
   }
 }
 
-module.exports = { redirect, addLink, indexRegister, allLinks};
+const deleteLink = async (req, res) =>{
+  let id = req.params.id;
+  if(!id){
+    id = req.body.id;
+  }
+
+  try{
+    await Link.findByIdAndDelete(id);
+    res.status(202).redirect('/');
+  }catch(error){
+    res.status(404).send(error);
+  }
+}
+
+
+module.exports = { redirect, addLink, indexRegister, allLinks, deleteLink }

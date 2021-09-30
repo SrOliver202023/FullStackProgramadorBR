@@ -8,9 +8,15 @@ db.once("open", () => console.log("db It's OK!"));
 
 Routes.use(express.urlencoded({ extended:true }))
 
-Routes.get('/all', LinkController.allLinks);
+Routes.get('/', LinkController.allLinks);
+Routes.get('/add', LinkController.indexRegister);
+
+
 Routes.get('/:title', LinkController.redirect);
-Routes.get('/', LinkController.indexRegister);
 Routes.post('/', LinkController.addLink);
+
+
+Routes.delete('/:id', LinkController.deleteLink);
+Routes.delete('/', LinkController.deleteLink);
 
 module.exports = Routes;
