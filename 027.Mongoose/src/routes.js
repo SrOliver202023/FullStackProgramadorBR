@@ -11,6 +11,10 @@ Routes.use(express.urlencoded({ extended:true }))
 Routes.get('/', LinkController.allLinks);
 Routes.get('/add', LinkController.indexRegister);
 
+Routes.get('/edit/:id', LinkController.loadLink)
+Routes.post('/edit/:id', LinkController.editLink)
+
+
 
 Routes.get('/:title', LinkController.redirect);
 Routes.post('/', LinkController.addLink);
